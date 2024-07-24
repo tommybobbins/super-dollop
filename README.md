@@ -7,6 +7,9 @@ AWS Solutions Architect Professional Revision notes
 - [Kinesis Data Streams](kds.md)
 - [Kinesis Data Firehose](kdf.md)
 - [KDS and KDF Use cases](kds_vs_kdf.md)
+- [EC2](ec2.md)
+- [PrivateLink](privatelink.md)
+- [Gateway Endpoints](gateway_endpoints.md)
 
 
 ## MNEMONIC

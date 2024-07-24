@@ -15,7 +15,7 @@ Sources->Kinesis Streams->Kinesis Analytics->Kinesis Firehose->S3, Redshift, ES/
 
 Low latency streaming ingest at scale.
 
-Producers -> Shard1, Shard2, .. Shared n -> Consumers
+Producers -> Shard1, Shard2, .. Shard_n_ -> Consumers
 
 - Data retention is by default 24 hours, but can be configured to be 365d.
 - Data auto-replicated to 3 AZ.
