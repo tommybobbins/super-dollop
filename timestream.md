@@ -10,3 +10,20 @@ Fast scalable and serverless TSDB. Built in time series analytics that support t
 - Memory store for recent data and magnetic store for historical.
 - Periodically and automatically schedule queries to perform real-time analytics on incoming data.
 
+
+## INPUTS
+
+- AWS IoT
+- KDS -> Lambda -> Timestream
+- KDS -> Timestream
+- Telegraf
+- Prometheus
+- KDS/MSK -> KDA for Apache Fink -> Timestream
+
+## OUTPUTS
+
+- Quicksight
+- Sagemaker
+- Grafana
+- JDBC
+
