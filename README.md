@@ -17,6 +17,8 @@ AWS Solutions Architect Professional Revision notes
 - [Guard Duty](guard_duty.md)
 - [S3](s3.md)
 - [VPC Endpoints](vpce.md)
+- [DataSync](datasync.md)
+- [CloudWatch Canary](canary.md)
 
 
 ## MNEMONIC
