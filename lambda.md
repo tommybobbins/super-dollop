@@ -17,17 +17,36 @@
 - *Asynchronous Express Workflows* return confirmation that the workflow was started, but don't wait for the workflow to complete. To get the result, you must poll the service's CloudWatch Logs. You can use Asynchronous Express Workflows when you don't require immediate response output, such as messaging services or data processing that other services don't depend on. You can start Asynchronous Express Workflows in response to an event, by a nested workflow in Step Functions, or by using the StartExecution API call.
 - *Synchronous Express Workflows* start a workflow, wait until it completes, and then return the result. Used to orchestrate microservices. With Synchronous Express Workflows, you can develop applications without the need to develop additional code to handle errors, retries, or run parallel tasks. You can run Synchronous Express Workflows invoked from Amazon API Gateway, AWS Lambda, or by using the StartSyncExecution API call.
 
-## Step Functions synchronous execution
+
+## Step Functions standard execution
 ````
 -----------> Time---------->
 [Job1]->[Job2]->[Job3]->[Job4]
 ````
 
-## Step Functions synchronous execution
+## Step Functions express execution
 ````
 -----------> Time---------->
 [Job1]
 [Job2]
 [Job3]
 [Job4]
+````
+## Step functions synchronous
+````
+[Job1]->[ACK]
+````
+
+## Step functions standard synchronous
+````
+-----------> Time---------->
+[Job1]->Ack->[Job2]->Ack->[Job3]->Ack->[Job4]->Ack
+````
+## Step functions express synchronous
+````
+-----------> Time---------->
+[Job1]->Ack
+[Job2]->Ack
+[Job3]->Ack
+[Job4]->Ack
 ````
