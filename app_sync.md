@@ -19,3 +19,5 @@ Is a managed service using GraphQL or Pub/Sub APIs which makes it easy for Appli
 
 - Perform Auth on Cognito users based on groups they belong to.
 - In the GraphQL schema, you specify the security for those Cognito groups.
+- ```` @aws_auth/cognito_groups: (["bloggers","readers"])````
+- Authorization via Cognito JWT.
