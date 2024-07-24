@@ -18,6 +18,7 @@ Low latency streaming ingest at scale.
 Producers -> Shard1, Shard2, .. Shard_n_ -> Consumers
 
 - Data retention is by default 24 hours, but can be configured to be 365d.
+- Each shard has a limit of 1MB/s. Throughput exception above this.
 - Data auto-replicated to 3 AZ.
 - Has the ability to reprocess/replay data.
 - Multiple applications can consume the same stream.

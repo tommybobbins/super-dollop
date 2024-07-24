@@ -14,6 +14,9 @@ AWS Solutions Architect Professional Revision notes
 - [App Sync](app_sync.md])
 - [Lambda](lambda.md)
 - [Timestream](timestream.md)
+- [Guard Duty](guard_duty.md)
+- [S3](s3.md)
+- [VPC Endpoints](vpce.md)
 
 
 ## MNEMONIC
