@@ -21,8 +21,3 @@ AWS Solutions Architect Professional Revision notes
 
 ## MNEMONIC
 
-- CloudDataProcOops (CDPOOPS)
-- CloudDataFlowBeam (CDFBEAM)
-- CloudDataFusionDAP (CDFUCDAP)
-- CloudWorkflowsAPI (CWFSAPI)
-- CloudComposerApacheAirflow (CCAA)
