@@ -19,6 +19,7 @@ AWS Solutions Architect Professional Revision notes
 - [VPC Endpoints](vpce.md)
 - [DataSync](datasync.md)
 - [CloudWatch Canary](canary.md)
+- [FSX](fsx.md)
 
 
 ## MNEMONIC
