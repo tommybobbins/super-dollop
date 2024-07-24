@@ -11,6 +11,7 @@ AWS Solutions Architect Professional Revision notes
 - [PrivateLink](privatelink.md)
 - [Gateway Endpoints](gateway_endpoints.md)
 - [Organizations][organizations.md]
+- [App Sync][app_sync.md]
 
 
 ## MNEMONIC
