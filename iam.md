@@ -184,7 +184,7 @@ User in Account A---->[Bucket Policy]--->Amazon S3 Account B
 
 # IAM Permission Boundaries
 
-IAM Permission Boundaries are supported for users and roles, but not groups. They are an advanced feature to set the maximum permissions and entity can get.
+IAM Permission Boundaries are supported for *users and roles, but not groups*. They are an advanced feature to set the maximum permissions and entity can get.
 
 e.g. If a permission boundary is E,A,R: Allow, [s3:*,cloudwatch:*,ec2:*], *, then a policy is applied E, A, R: Allow, [iam:CreateUser], *, the permissions will not be allowed.
 

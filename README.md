@@ -13,6 +13,7 @@ AWS Solutions Architect Professional Revision notes
 - [Organizations](organizations.md)
 - [App Sync](app_sync.md])
 - [Lambda](lambda.md)
+- [Timestream](timestream.md)
 
 
 ## MNEMONIC
