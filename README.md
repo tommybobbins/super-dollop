@@ -10,6 +10,7 @@ AWS Solutions Architect Professional Revision notes
 - [EC2](ec2.md)
 - [PrivateLink](privatelink.md)
 - [Gateway Endpoints](gateway_endpoints.md)
+- [Organizations][organizations.md]
 
 
 ## MNEMONIC
