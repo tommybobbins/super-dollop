@@ -6,10 +6,16 @@ Is a managed service using GraphQL or Pub/Sub APIs which makes it easy for Appli
 - Commonly used for Mobile Applications, IoT, Offline/intermittent apps: local data access + Data sync.
 - It is stood up with uploading a GraphQL schema.
 
-# Integrates with
+## Integrates with
 
 - DynamoDB
 - Aurora
 - Opensearch
 - Lambda
 - HTTP -> Public HTTP APIs
+- Cloudwatch Metrics and Logs.
+
+## Cognito Authorisation
+
+- Perform Auth on Cognito users based on groups they belong to.
+- In the GraphQL schema, you specify the security for those Cognito groups.
