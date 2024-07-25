@@ -1,6 +1,6 @@
 # IAM Principals
 
-IAM Principals must be authenticated to send requests (there are a few exceptions)
+IAM Principals must be authenticated to send requests (there are a few exceptions). A Principal is a person or an application that can make a request for an action or operation on an AWS Resource.
 
 - User
 - Role
@@ -19,9 +19,19 @@ Short term credentials, uses STS
 
 # Policies
 
+Identity based policy versus Resource based policy
+
 - AWS Managed.
 - Customer Managed.
 - Inline Policies - embedded inside a role.
+
+## Trust Policy
+
+Who can assume the role? This is an example of an Resource based policy (What resources can assume this role?)
+
+## Permissions Policy
+
+What can they do when they have access? This is an example of an Identity based policy.
 
 ## Resource based policies
 
@@ -112,9 +122,11 @@ Organizations SCP + Permissions Boundaries + Identity Based Pollicy = Effective 
 
 # Roles
 Short term credentials, uses STS
-- EC Instance Roles: Uses the EC2 metadata service. One role at a time per instance.
+- EC Instance Profile -> IAM Roles: Uses the EC2 metadata service. One role at a time per instance.
 - Service Roles: API Gateway, CodeDeploy, etc.
 - Cross Account Roles.
+
+An EC2 application uses the Instance Profile to assume the Role, temporary credentials are returned via sts.
 
 # Policies
 
@@ -229,6 +241,50 @@ Access outside zone of trust provides findings.
 - CloudTrail logs are reviewed to generate a policy with the fine-grained permissions and appropriate Actions and Services.
 - Reviews CloudTrail Logs of *up to 90 days*.
 
-## Using STS to Assume a Role
+## RBAC and ABAC
 
+### RBAC
+
+- Multiple groups (Admins, Developers, Operations).
+- Users are placed into those Groups.
+- Permissions are assigned to those Groups.
+- Minimum permissions required to perform the job.
+
+### ABAC
+
+- Attribute based access control (e.g. tags)
+- DBAdmins Group-> Dave is in the group-> Tag assigned to Dave (Department = DBAdmins)
+- *IF:* Permissions policy rds:RebootDBInstance assigned to Group if StringEquals-> ```` [ aws:PrincipalTag/Department: DBAdmins ] ````
+- *AND:* Resource Tag ```` [rds:db-tag/Environment: Production ] ````
+
+
+## Combinations of policies
+
+- Identity-based policy + Resource Based policy is a logical OR (concat).
+- Identity-based policy + Permissions Boundary is a logical AND (intersection).
+- Identity-based policy + Organizations SCP is a logical AND (intersection).
+- An explicity Deny in any policy overrides (Trumps).
+
+## Permissions Boundary
+
+Used when creating user, prevents Privilege escalation.
+
+## Best Practices
+
+- Lock away root user access keys.
+- Create individual IAM users.
+- Use groups to assign permissions to IAM users.
+- Grant least privilege.
+- Get started using permissions with AWS managed policies.
+- Use customer managed policies instead of inline policies.
+- Use access levels to review IAM permissions.
+- Configure a strong password policy for your users.
+- Use MFA for all users.
+- Use roles for applications on EC2.
+- Use roles to delegate permissions.
+- Do not share access keys.
+- Rotate credentials regularly.
+- Remove unnecessary credentials.
+- Use policy conditions for extra security.
+- Monitor activity in your account.
 
