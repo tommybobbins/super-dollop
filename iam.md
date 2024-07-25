@@ -1,3 +1,12 @@
+# IAM Principals
+
+IAM Principals must be authenticated to send requests (there are a few exceptions)
+
+- User
+- Role
+- Federated User
+- Application
+
 # Users (long term credentials)
 
 # Groups (of users)

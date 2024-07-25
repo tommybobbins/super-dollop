@@ -12,3 +12,26 @@ Consolidated Billing features – All organizations support this subset of featu
 Service Control policies don't replace associating IAM policies. SCPs allow or deny access to AWS Services for individual AWS Accounts within the Organization (members accounts or groups of accounts within an OU). The specified actions from an attached SCP affect all IAM identities including the root user.
 
 AWS Services that aren't explicity allowed by the SCP associated with an AWS Account or Parent OU are denied access to the AWS Accounts. SCP's associated to an OU are inherited by all AWS accounts inside that OU.
+
+
+## AWS Control Tower
+
+- Extension to AWS Organizations. Additional Controls.
+- Create a Landing Zone. Well architected, multi-account baseline.
+- Integrates with SSO, SAML 2.0 IdP or AD.
+- Preventative Guardrails via Managed SCPs.
+- Creates Detective Guardrails to monitor and govern compliance.
+- Root user in the management account can perform functions that guardrails would disallow.
+
+## Root OU 
+- Mgmt
+
+### Security OU:
+- Audit
+- Logging
+
+### Sandbox OU
+- Dev/Test
+
+### Production OU
+- Prd

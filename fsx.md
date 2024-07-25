@@ -67,3 +67,12 @@ NFS/ZFS->AWS
 - Replace failed files in minutes.
 - Usage: long-term processing, sensitive data.
 - Writes to S3.
+
+## Migration from Single AZ to Multi-AZ
+
+Two options:
+
+FSx For WFS (single AZ)------> AWS Data Sync -------> FSx for WFS (multi AZ)
+FSx For WFS (single AZ)------> Backup->Restore -----> FSx for WFS (multi AZ)
+
+Backup can only restore to the same size. It can only increase capacity, not decrease. To reduce the capacity allocated to FSx, perform migration and point App to the new endpoint.
