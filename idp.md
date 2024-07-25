@@ -39,7 +39,7 @@ Can also integrate with AWS Organizations and underlying accounts.
 ### Cognito
 
 ````
-Users --> App --> Cognito User Pool --> Cognitor IdP --> AWS STS (sts:AssumeRoleWithWebIdentity) returns temp creds:
+Users --> App --> Cognito User Pool --> Cognito IdP --> AWS STS (sts:AssumeRoleWithWebIdentity) returns temp creds:
           Social IDp <----->                     
            --------------------------------------------------------------> DDB
 ````

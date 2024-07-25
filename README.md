@@ -22,6 +22,7 @@ AWS Solutions Architect Professional Revision notes
 - [FSX](fsx.md)
 - [Directory Services and Federation](directory_services.md)
 - [Identity Providers and Federation](idp.md)
+- [Cognito](cognito.md)
 
 
 ## MNEMONIC
