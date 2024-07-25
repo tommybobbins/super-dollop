@@ -25,6 +25,7 @@ IGW can have a gateway route table in case packets within the VPC need routing v
 
 - Obviously use in most cases.
 
+## Comparison chart 
 
 | NAT Instance | NAT GW |
 | --- | --- |
@@ -35,3 +36,33 @@ IGW can have a gateway route table in case packets within the VPC need routing v
 | Can use as a bastion | No SSH access |
 | Use an EIP or public IP | Choose an Elastic IP address at creation |
 | Can implement port forwarding through manual customisation | Does not support port forwarding |
+
+## Egress only Internet Gatway is a NAT GW for Ipv6.
+
+## VPC Endpoints
+
+Use a private endpoint to connect to Amazon S3, DynamoDB etc.
+
+### VPC Interface Endpoint
+
+ENI is created in the subnet. Each interface endpoint can connect to one AWS service. 
+Interface endpoint can connect to PrivateLink.
+
+### VPC Gateway Endpoint
+
+Used for S3 and DynamoDB. Route table entry - required with the prefix list for S3 and the Gateway ID.
+IAM policies can be applied to endpoints and bucket policies can limit access to the endpoint source.
+
+### Comparison chart
+
+|| Interface Endpoint | Gateway Endpoint |
+| --- | --- | --- |
+|What | ENI with a Private IP | Gateway that is a target for a specific route|
+|How| DNS entries to redirect traffic | Prefix lists in the route table to redirect|
+|Which services| API GW, CF, Cloudwatch etc. | S3, DynamoDB|
+|Security| Security Groups | VPC Endpoint policies |
+
+
+
+
+

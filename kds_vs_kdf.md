@@ -2,7 +2,7 @@
 
 When to use KDS and KDF:
 
-| Kinesis Data Streams | Kinesis Data Firehose
+| Kinesis Data Streams | Kinesis Data Firehose |
 | --- | --- |
 | Streaming service for Ingest at Scale | Ingesion service for Storage |
 | Write Custom Code (producer/consumer) | Fully Managed |
