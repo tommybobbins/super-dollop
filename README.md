@@ -21,6 +21,7 @@ AWS Solutions Architect Professional Revision notes
 - [CloudWatch Canary](canary.md)
 - [FSX](fsx.md)
 - [Directory Services and Federation](directory_services.md)
+- [Identity Providers and Federation](idp.md)
 
 
 ## MNEMONIC
