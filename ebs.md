@@ -13,7 +13,7 @@ Replicated within an AZ for availability.
 
  ## Disk comparison table
 
-|General Purpose SSD volumes| General Purpose SSD VOlumes|Provisioned IOPS SSD volumes|Provisioned IOPS SSD volumes|
+||General Purpose SSD volumes| General Purpose SSD Volumes|Provisioned IOPS SSD volumes|Provisioned IOPS SSD volumes|
 |---|---|---|---|---|
 |Volume type|gp3|gp2|io2 Block Express 3|	io1|
 |Durability|99.8% - 99.9% durability (0.1% - 0.2% annual failure rate)|99.999% durability (0.001% annual failure rate)|99.8% - 99.9% durability (0.1% - 0.2% annual failure rate)|
