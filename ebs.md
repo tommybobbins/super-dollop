@@ -24,3 +24,27 @@ Replicated within an AZ for availability.
 |Amazon EBS Multi-attach|Not supported|Not supported|Not supported|Supported|
 |NVMe reservations|Not supported|Not supported|Supported|Not supported|
 |Boot volume|Supported|Supported|Supported|Supported|
+
+- ````st1```` (HDD) is low cost.
+- ````sc1```` (HDD) is for low frequency writes.
+
+## Volumes Restored from EBS snapshot
+
+- May need to be pre-warmed or use fast snapshot restore or ````fio/dd```` commmands to read entire volume.
+
+## EBS versus instance store
+
+## Encrypted AMI
+
+Can be shared with other accounts via a custom key, not AWS default key.
+
+- Encrypted AMI->Encrypted AMI to change encryption key
+- Encrypted AMI->EC2 instance to change encryption key
+
+
+## Instance Stores versus EBS
+
+- Instance store volumes are high performance local disks, physically attached to the host on which the EC2 instance runs.
+- Instance stores are ephemeral, data is lost when the instance is powered off
+- Instance stores are ideal for temporary storage of information that changes frequently such as buffers, caches or scratch data.
+

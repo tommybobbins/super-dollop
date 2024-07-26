@@ -39,6 +39,7 @@ AWS Solutions Architect Professional Revision notes
 - [Elasticcache][elasticache.md]
 - [Redshift](redshift.md)
 - [EBS](ebs.md)
+- [EFS](efs.md)
 
 
 ## MNEMONIC
