@@ -40,6 +40,7 @@ AWS Solutions Architect Professional Revision notes
 - [Redshift](redshift.md)
 - [EBS](ebs.md)
 - [EFS](efs.md)
+- [Storage Gateway](storage_gateway.md)
 
 
 ## MNEMONIC
