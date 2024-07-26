@@ -58,3 +58,9 @@ Elastic Fabric Adapter.
 - HPC, MPI (Message passing interfaces) and ML.
 - Tightly coupled applications
 - Can be used with all instance types.
+
+## Patching
+
+- Set up Systems Manager Agent on all instances to manage patching. 
+- Test patches in pre-production and then deploy as a maintenance window task with the appropriate approval.
+- Apply patch baselines using the ````AWS-RunPatchBaseline```` SSM document.

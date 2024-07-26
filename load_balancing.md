@@ -13,3 +13,13 @@ When using an NLB with a VPC endpoint or AWS GA, source IPs are the private IPs 
 
 - ALB TLS (ACM Certificate)
 - NLB can terminated TLS at NLB or passthrough.
+
+
+## NLB Static IPs and Whitelisting
+
+- Allocate elastic IPs up front, then allocate these to the NLB
+
+
+## Session State and Stickiness
+
+- Network load balancers do not support least outstanding requests routing.

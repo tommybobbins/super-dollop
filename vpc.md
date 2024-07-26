@@ -68,3 +68,15 @@ IAM policies can be applied to endpoints and bucket policies can limit access to
 [Consumer VPC->EC2->Interface Endpoint] ----------------[ Service Provider VPC->NLB->Webserver]
 ````
 
+## Default SG
+
+The following are the default rules for a default security group:
+
+- Allow inbound traffic from network interfaces (and their associated instances) that are assigned to the same security group.
+- Allows all outbound traffic
+
+## VPC Sharing (RAM)
+
+Use VPC sharing to share one or more subnets with other AWS accounts belonging to the same parent organization from AWS Organizations
+
+VPC sharing (part of Resource Access Manager) allows multiple AWS accounts to create their application resources such as EC2 instances, RDS databases, Redshift clusters, and Lambda functions, into shared and centrally-managed Amazon Virtual Private Clouds (VPCs).

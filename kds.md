@@ -8,6 +8,7 @@ It is a managed data streaming service suitable for
 - Clickstreams
 - Real-time big data
 - Spark/NiFi
+- 2MB/s/shard
 
 Sources->Kinesis Streams->Kinesis Analytics->Kinesis Firehose->S3, Redshift, ES/OS.
 
@@ -38,3 +39,9 @@ Producers -> Shard1, Shard2, .. Shard_n_ -> Consumers
 ## Kinesis Agent
 Java software application provides a way to collect and send data to Kinesis Data Strreams.
 https://docs.aws.amazon.com/streams/latest/dev/writing-with-agents.html
+
+### Enhanced fanout if there is lag between producers and consumers
+
+Amazon Kinesis Data Streams (KDS) is a massively scalable and durable real-time data streaming service. KDS can continuously capture gigabytes of data per second from hundreds of thousands of sources such as website clickstreams, database event streams, financial transactions, social media feeds, IT logs, and location-tracking events. By default, the 2MB/second/shard output is shared between all of the applications consuming data from the stream.
+
+You should use enhanced fan-out if you have multiple consumers retrieving data from a stream in parallel. With enhanced fan-out developers can register stream consumers to use enhanced fan-out and receive their own 2MB/second pipe of read throughput per shard, and this throughput automatically scales with the number of shards in a stream.

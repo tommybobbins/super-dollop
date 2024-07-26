@@ -27,6 +27,18 @@ AWS Solutions Architect Professional Revision notes
 - [Cognito](cognito.md)
 - [AutoScaling](asg.md)
 - [Load Balancing](load_balancing.md)
+- [AWS Batch](batch.md)
+- [Lightsail](lightsail.md)
+- [Global Accelerator](global_accelerator.md)
+- [Lightsail](lightsail.md)
+- [Batch](batch.md)
+- [SCP](scp.md)
+- [SQS](sqs.md)
+- [WAF](waf.md)
+- [RDS](rds.md)
+- [Elasticcache][elasticache.md]
+- [Redshift](redshift.md)
+- [EBS](ebs.md)
 
 
 ## MNEMONIC
