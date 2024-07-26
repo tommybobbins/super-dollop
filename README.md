@@ -16,13 +16,17 @@ AWS Solutions Architect Professional Revision notes
 - [Timestream](timestream.md)
 - [Guard Duty](guard_duty.md)
 - [S3](s3.md)
+- [VPC](vpc.md)
 - [VPC Endpoints](vpce.md)
+- [VPN](vpn.md)
 - [DataSync](datasync.md)
 - [CloudWatch Canary](canary.md)
 - [FSX](fsx.md)
 - [Directory Services and Federation](directory_services.md)
 - [Identity Providers and Federation](idp.md)
 - [Cognito](cognito.md)
+- [AutoScaling](asg.md)
+- [Load Balancing](load_balancing.md)
 
 
 ## MNEMONIC

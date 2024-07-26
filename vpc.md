@@ -63,6 +63,8 @@ IAM policies can be applied to endpoints and bucket policies can limit access to
 |Security| Security Groups | VPC Endpoint policies |
 
 
-
-
+### Service Provider Model
+````
+[Consumer VPC->EC2->Interface Endpoint] ----------------[ Service Provider VPC->NLB->Webserver]
+````
 
