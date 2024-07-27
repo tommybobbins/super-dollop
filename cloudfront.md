@@ -80,6 +80,4 @@ Can be run at the following points:
 Networking service to use AWS Global application to use AWS Network for data transfer, consistency.
 Provides a static *anycast* IP to connect to endpoints (useful for allowlists). Will still be directed towards your closest edge location.
 Traffic traverses the AWS global network.
-
-
-
+Similar to cloudfront, can perform failover.
