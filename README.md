@@ -41,7 +41,8 @@ AWS Solutions Architect Professional Revision notes
 - [EBS](ebs.md)
 - [EFS](efs.md)
 - [Storage Gateway](storage_gateway.md)
-
+- [R53](r53.md)
+- [CloudFront](cloudfront.md)
 
 ## MNEMONIC
 
