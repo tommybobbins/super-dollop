@@ -80,3 +80,11 @@ The following are the default rules for a default security group:
 Use VPC sharing to share one or more subnets with other AWS accounts belonging to the same parent organization from AWS Organizations
 
 VPC sharing (part of Resource Access Manager) allows multiple AWS accounts to create their application resources such as EC2 instances, RDS databases, Redshift clusters, and Lambda functions, into shared and centrally-managed Amazon Virtual Private Clouds (VPCs).
+
+
+## Flow Logs
+
+Flow Logs can only be published to:
+- Amazon CloudWatch Logs.
+- Amazon S3.
+- Amazon Kinesis Data Firehose. 
