@@ -64,3 +64,13 @@ Elastic Fabric Adapter.
 - Set up Systems Manager Agent on all instances to manage patching. 
 - Test patches in pre-production and then deploy as a maintenance window task with the appropriate approval.
 - Apply patch baselines using the ````AWS-RunPatchBaseline```` SSM document.
+
+## Application Migration service
+
+AWS Application Migration Service (MGN) simplifies and expedites your migration to AWS by automatically converting your source servers from physical, virtual, or cloud infrastructure to run natively on AWS. It further simplifies your migration and reduces costs by enabling you to use the same automated process for a wide range of applications, without changes to applications, their architecture, or the migrated servers. You can use AWS Application Migration Service to perform non-disruptive tests before cutover. After testing, you can use AWS Application Migration Service to quickly lift and shift your applications to the cloud during a short cutover window, typically measured in minutes.
+
+## Packet tracing
+
+VPC Flow logs show L4 detail,  but if you need to see the content of packets (wireshark):
+
+Generally, the promiscuous mode allows the user to bypass the normal operation mode by forwarding all traffic it receives to the CPU. However for AWS, even if you can turn your NIC to Promiscuous mode, the hypervisor will never pass traffic intended for another virtual machine to your EC2 instance. You need to use traffic mirroring as it allows you to copy traffic passing through an elastic network adaptor and send it toward another instance for further investigation.
