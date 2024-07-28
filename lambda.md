@@ -110,3 +110,10 @@ What is an Alias?
 - MyFunction:testalias is an alias which may point to MyFunction:2.
 - MyFunction:testalias can bluegreen and point 20%, 80% to MyFunction:1, MyFunction:2 respectively.
 
+
+## Serverless Architecture patterns
+
+- Decouple with SQS even if you are using EC2, can use EC2->SQS->Lambda->RDS.
+- Scale processing tier (ASG) based on SQS queue length.
+
+TBC

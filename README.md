@@ -35,6 +35,7 @@ AWS Solutions Architect Professional Revision notes
 - [SCP](scp.md)
 - [Application Integration Services](application_services.md)
 - [SQS](sqs.md)
+- [SNS](sns.md)
 - [WAF](waf.md)
 - [RDS](rds.md)
 - [Elasticcache][elasticache.md]
@@ -46,6 +47,9 @@ AWS Solutions Architect Professional Revision notes
 - [CloudFront](cloudfront.md)
 - [DynamoDB](dynamodb.md)
 - [NoSQL](nosql.md)
+- [AppFlow](appflow.md)
+- [Eventbridge](eventbridge.md)
+- [API Gateway](api_gateway.md)
 
 ## MNEMONIC
 
