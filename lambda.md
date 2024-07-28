@@ -1,4 +1,41 @@
 
+## Lambda function invocations
+
+### Synchronous
+
+- e.g. CLI, SDK, API Gateway
+- Result returned immediately
+- Error processing happens client side (retries, exponential backoff)
+
+### Asynchronous
+
+- e.g. S3, SNS, Cloudwatch events
+- Lambda retries up to 3 times
+- Processing must be idempotent
+
+### Event Source mapping
+
+- SQS, Kinesis Data Streams, DDB streams.
+- Lambda does the polling.
+- Records are processed in order (except SQS standard).
+- SQS can also trigger lambda *OR* lambda can poll SQS!
+
+### Lambda function concurrency
+
+- Additional functions are initialized up to the burst or account limit.
+- If the concurrency limit is exceeded, throttling occurs with error "Rate exceeded" and 429,
+"TooManyRequestsException"
+- Burst concurrency is 3000, 1000, 500 depending on region.
+- Check for throttling messages in Cloudwatch logs
+- If there are no Lambda throttles metrics, the throttling is happening on the API calls
+- For asynchronous lambda retries, after 3 times, will go to DLQ.
+- DLQ can go to either SNS topic or SQS queue.
+
+If you have throttling
+
+- Configure reserved concurrency
+- Exponential backoff
+- Concurrency metrics
 
 ## Step Function Execution Guarantees
 
@@ -50,3 +87,26 @@
 [Job3]->Ack
 [Job4]->Ack
 ````
+
+
+## Lambda Versions and Aliases
+
+Updating lambda versions and pointing an application to those versions.
+
+### Lambda versions
+MyFunction:$LATEST -> Edit -> MyFunction:1
+
+- Snapshot is saved to a new version MyFunction:1
+- New version includes function code, dependencies, runtime, function settings and a unique ARN.
+- Versions are immutable 1,2,3,4,.
+- Because different versions have different ARNs this allows you to manage them for dev,uat,prd
+- A qualified ARN has a version suffix ```` arn:aws:lambda:eu-west-2:1234568907:function:MyFunction:1 ````
+- An unqualified ARN does not have a version suffix
+- You cannot create an ALIAS from an unqualified ARN.
+
+What is an Alias?
+
+- MyFunction:1, MyFunction:2 are lambda versions.
+- MyFunction:testalias is an alias which may point to MyFunction:2.
+- MyFunction:testalias can bluegreen and point 20%, 80% to MyFunction:1, MyFunction:2 respectively.
+

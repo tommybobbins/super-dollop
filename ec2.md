@@ -69,6 +69,8 @@ Elastic Fabric Adapter.
 
 AWS Application Migration Service (MGN) simplifies and expedites your migration to AWS by automatically converting your source servers from physical, virtual, or cloud infrastructure to run natively on AWS. It further simplifies your migration and reduces costs by enabling you to use the same automated process for a wide range of applications, without changes to applications, their architecture, or the migrated servers. You can use AWS Application Migration Service to perform non-disruptive tests before cutover. After testing, you can use AWS Application Migration Service to quickly lift and shift your applications to the cloud during a short cutover window, typically measured in minutes.
 
+As of March 31, 2022, AWS has discontinued AWS Server Migration Service (AWS SMS). Going forward, AWS recommends AWS Application Migration Service (AWS MGN) as the primary migration service for lift-and-shift migrations.
+
 ## Packet tracing
 
 VPC Flow logs show L4 detail,  but if you need to see the content of packets (wireshark):

@@ -81,3 +81,5 @@ Networking service to use AWS Global application to use AWS Network for data tra
 Provides a static *anycast* IP to connect to endpoints (useful for allowlists). Will still be directed towards your closest edge location.
 Traffic traverses the AWS global network.
 Similar to cloudfront, can perform failover.
+
+Custom routing accelerators support only VPC subnet endpoints, each containing one or more EC2 instances that are running your application. Each VPC subnet endpoint, which could be in a single or multiple Regions, contains the IP addresses of the EC2 instances that host your application. 

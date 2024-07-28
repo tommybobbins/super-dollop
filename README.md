@@ -33,6 +33,7 @@ AWS Solutions Architect Professional Revision notes
 - [Lightsail](lightsail.md)
 - [Batch](batch.md)
 - [SCP](scp.md)
+- [Application Integration Services](application_services.md)
 - [SQS](sqs.md)
 - [WAF](waf.md)
 - [RDS](rds.md)
@@ -43,6 +44,8 @@ AWS Solutions Architect Professional Revision notes
 - [Storage Gateway](storage_gateway.md)
 - [R53](r53.md)
 - [CloudFront](cloudfront.md)
+- [DynamoDB](dynamodb.md)
+- [NoSQL](nosql.md)
 
 ## MNEMONIC
 
