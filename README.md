@@ -54,6 +54,10 @@ AWS Solutions Architect Professional Revision notes
 - [ECS](ecs.md)
 - [ECR](ecr.md)
 - [ElasticBeanstalk](elastic_beanstalk.md)
+- [EKS](eks.md)
+- [App Runner](app_runner.md)
+- [Containers Architecture Patternes](containers_architecture.md)
+- [CICD](cicd.md)
 
 ## MNEMONIC
 
