@@ -51,6 +51,9 @@ AWS Solutions Architect Professional Revision notes
 - [Eventbridge](eventbridge.md)
 - [API Gateway](api_gateway.md)
 - [Serverless Architecture Patterns](serverless_architecture.md)
+- [ECS](ecs.md)
+- [ECR](ecr.md)
+- [ElasticBeanstalk](elastic_beanstalk.md)
 
 ## MNEMONIC
 
