@@ -50,6 +50,7 @@ AWS Solutions Architect Professional Revision notes
 - [AppFlow](appflow.md)
 - [Eventbridge](eventbridge.md)
 - [API Gateway](api_gateway.md)
+- [Serverless Architecture Patterns](serverless_architecture.md)
 
 ## MNEMONIC
 
