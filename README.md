@@ -38,7 +38,7 @@ AWS Solutions Architect Professional Revision notes
 - [SNS](sns.md)
 - [WAF](waf.md)
 - [RDS](rds.md)
-- [Elasticcache][elasticache.md]
+- [Elasticache](elasticache.md)
 - [Redshift](redshift.md)
 - [EBS](ebs.md)
 - [EFS](efs.md)
