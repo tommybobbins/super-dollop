@@ -59,6 +59,7 @@ AWS Solutions Architect Professional Revision notes
 - [Containers Architecture Patternes](containers_architecture.md)
 - [CICD](cicd.md)
 - [CloudFormation](cloudformation.md)
+- [Migration](migration.md)
 
 ## MNEMONIC
 
