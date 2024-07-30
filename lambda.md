@@ -117,3 +117,27 @@ What is an Alias?
 - Scale processing tier (ASG) based on SQS queue length.
 
 TBC
+
+
+## SAM
+
+- Shorthand syntax to express functions, API, databases and event source mappings.
+- Lambda functions, API endpoints, DynamoDB and other resources.
+- ```` sam package; sam deploy ```` - upload to bucket and run Cloudformation with the code.
+- SAM templates is a yaml configuration that comprise your serverless application in one place. 
+- Extension of CloudFormation templates, so any resource that you can declare in an AWS CF Template can also be declared in an AWS SAM template.
+- ```` Transform: 'AWS:Serverless-2016-10-31' ```` indicates that this is a SAM template.
+
+### Resources types
+
+- ```` AWS::Serverless::Function ```` AWS Lambda.
+- ```` AWS::Serverless::API ```` AWS API Gateway.
+- ```` AWS::Serverless::SimpleTable ```` DynamoDB.
+- ```` AWS::Serverless::Application ```` AWS Serverless Application Repository.
+- ```` AWS::Serverless::HttpApi ```` API Gateway HTTP API.
+- ```` AWS::Serverless::LayerVersion ```` AWS Lambda Layers.
+
+###  Uses
+
+```` sam init; sam build; sam deploy ```` -> S3 Bucket -> CloudFormation -> Stack ->Change set.
+```` sam local invoke "function"; sam local stat-api ```` - Downloads and runs a container locally for testing API/Lambda/DDB. 

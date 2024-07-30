@@ -25,3 +25,25 @@ Infrastructure patterns are defined in a template file using code (json or yaml)
 
 - Direct update - submit changes and AWS immediately deploys.
 - Change sets - preview the changes AWS will make and decide whether to apply or not.
+
+## Service Catalog
+
+AWS Service Catalog, create and manage approved catalogs of IT services. It enables users to quickly deploy only the approved IT services they need.
+
+- Catalog Admin authors templates and creates product. Organise into portfolios.
+- Product is added to a portfolio.
+- Users/Groups are assigned permissions to a portfolio.
+- Constraints are added to the product/portfolio.
+
+### Constraints
+
+- Controls the ways that AWS resources can be deployed.
+- Apply limits to products for governance or cost control.
+- * Launch constraints * - specify a role for a product in a portfolio. The role is used to provision resources at launch so you can restrict user permissions without impacting users ability to provision products from the catalog.
+- * Notification constraints * - enable you to get notifications about stack events using an Amazon SNS topic.
+- * Template constraints * - restrict the configuration parameters that are available for the user when launching the product.
+
+### Service Catalog Permissions
+
+- Users don't need permissions, only permissions to access Service Catalog.
+- Underlying Service Catalog needs a Role and a Policy to allow it to launch resources.

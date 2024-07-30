@@ -60,6 +60,7 @@ AWS Solutions Architect Professional Revision notes
 - [CICD](cicd.md)
 - [CloudFormation](cloudformation.md)
 - [Migration](migration.md)
+- [Systems Manager](systems_manager.md)
 
 ## MNEMONIC
 
