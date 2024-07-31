@@ -63,6 +63,11 @@ AWS Solutions Architect Professional Revision notes
 - [Systems Manager](systems_manager.md)
 - [OpsWorks](opsworks.md)
 - [Resource Access Manager](ram.md)
+- [Personal Health Dashboard](personal_health_dashboard.md)
+- [Well Architected Tool](wat.md)
+- [IoT Greengrass](iot_greengrass.md)
+- [Personal Health Dashboards](personal_health_dashboard.md)
+- [Athena](athena.md)
 
 ## MNEMONIC
 

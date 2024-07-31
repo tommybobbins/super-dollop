@@ -1,5 +1,18 @@
 # Redshift
 
+## Database use cases
+
+| Operational | Analytical |
+| --- | --- |
+| OLTP| OLAP |
+|Production DBS that process transactions (e.g. adding custom records, checking stock, INSERT, UPDATE, DELETE).| Data warehouse - never customer facing. Data is extracted for decision making.| 
+|Short transactions and simple queries .| Long transaction and complex queries. |
+|RDS, DynamoDB|Redshift, EMR| 
+
+
+## Redshift and OLAP Use Cases.
+
+
 
 ## Redshift backups:
 

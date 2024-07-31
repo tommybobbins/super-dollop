@@ -10,6 +10,11 @@ Can sync to:
 
 - S3
 - EFS
+- NFS
+- SMB
+- HDFS
+- Snowcone
+- Self managed object storage (CEPH)
 - FSx Windows
 - FSx Netapp
 - FSx Lustre
