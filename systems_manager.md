@@ -34,4 +34,23 @@
 
 ## Run Command 
 
+- Run command on managed EC2 instances. 
+- Choose instances based on manual, tag or resource group for targetting.
+- Rate control/concurrency.
+- AWS-InstallMissingWindowsUpdates.
+
 ## Patch Manager
+
+- Create Patch policy
+- *Scan* or *Scan and Install*
+- Schedule
+- Different baseline policies for different OS.
+- Within an Organization, local account must have read auth and the destination account must have write auth.
+- Add required IAM prolicies to existing profiles attached to your instance - QuickSetup patch policies.
+
+# Systems Manager Configuration Compliance
+
+- Packages installed.
+- Patches installed.
+- AV installed.
+- Check for compliance of software installed.

@@ -61,6 +61,8 @@ AWS Solutions Architect Professional Revision notes
 - [CloudFormation](cloudformation.md)
 - [Migration](migration.md)
 - [Systems Manager](systems_manager.md)
+- [OpsWorks](opsworks.md)
+- [Resource Access Manager](ram.md)
 
 ## MNEMONIC
 
