@@ -357,3 +357,19 @@ Identity Federation can have these flavours
  - Custom Identity Broker.
  - Web Identity Federation With/out Amazon Cognito.
  - SSO.
+
+
+## IAM Identity Center
+
+- AWS IAM Identity Center has integration with Microsoft AD through the AWS Directory Service. 
+- Employees can sign in to AWS access portal using their corporate Active Directory credentials. 
+- To grant Active Directory users access to accounts and applications, you simply add them to the appropriate Active Directory groups. 
+- Third Party integration support, using Identity Center, sign-ins to 3rd party applications is simple.
+- For example, you can grant the DevOps group SSO access to your production AWS accounts. Users added to the DevOps group are then granted SSO access to these AWS accounts automatically. This automation makes it easy to onboard new users and gives existing users access to new accounts and applications quickly.
+- Can configure one and two-way external and forest trust relationships between your AWS Directory Service for Microsoft Active Directory and on-premises directories, as well as between multiple AWS Managed Microsoft AD directories in the AWS cloud. 
+- AWS Managed Microsoft AD supports all three trust relationship directions: Incoming, Outgoing, and Two-way (Bi-directional). AWS Managed Microsoft AD supports both external and forest trusts.
+- Users in your self-managed Active Directory (AD) can also have SSO access to AWS accounts and cloud applications in the AWS access portal. To do that, AWS Directory Service has the following two options available:
+
+  1. Create a two-way trust relationship – When two-way trust relationships are created between AWS Managed Microsoft AD and a self-managed AD, users in your self-managed AD can sign in with their corporate credentials to various AWS services and business applications. One-way trusts do not work with AWS IAM Identity Center.
+  AWS IAM Identity Center (successor to AWS Single Sign-On) requires a two-way trust so that it has permission to read user and group information from your domain to synchronize user and group metadata. IAM Identity Center uses this metadata when assigning access to permission sets or applications. User and group metadata is also used by applications for collaboration, like when you share a dashboard with another user or group. The trust from AWS Directory Service for Microsoft Active Directory to your domain permits IAM Identity Center to trust your domain for authentication. The trust in the opposite direction grants AWS permissions to read user and group metadata.
+  2. Create an AD Connector – AD Connector is a directory gateway that can redirect directory requests to your self-managed AD without caching any information in the cloud.

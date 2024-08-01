@@ -48,7 +48,7 @@ You should use enhanced fan-out if you have multiple consumers retrieving data f
 
 ## Kinesis Consumer Library
 
-One of the methods of developing custom consumer applications that can process data from KDS data streams is to use the Kinesis Client Library (KCL).
+One of the methods of developing custom consumer applications that can process data from KDS data streams is to use the Kinesis Client Library (KCL). Each shard is processed by exactly one worker, but number of shards can and should exceed the number of workers.
 
 
 ## Kinesis Producer Library

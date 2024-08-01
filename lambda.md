@@ -1,6 +1,8 @@
 
 ## Lambda function invocations
 
+- Can only run for 15 minutes. Look for another solution if > 15 minutes required.
+
 ### Synchronous
 
 - e.g. CLI, SDK, API Gateway

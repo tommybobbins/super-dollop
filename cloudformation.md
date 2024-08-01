@@ -47,3 +47,9 @@ AWS Service Catalog, create and manage approved catalogs of IT services. It enab
 
 - Users don't need permissions, only permissions to access Service Catalog.
 - Underlying Service Catalog needs a Role and a Policy to allow it to launch resources.
+
+# CloudFormation and Autoscaling groups
+
+You can add an ````UpdatePolicy```` attribute to your stack to perform rolling updates (or replace the group) when a change has been made to the group. Alternatively, you can force a rolling update on your instances at any time after updating the stack by starting an instance refresh.
+
+To specify how AWS CloudFormation handles rolling updates for an Auto Scaling group, use the ````AutoScalingRollingUpdate ```` policy. Rolling updates enable you to specify whether AWS CloudFormation updates instances that are in an Auto Scaling group in batches or all at once. For example, suppose you have updated the MaxBatchSize in your stack template’s UpdatePolicy from 1 to 10. This allows you to perform updates without causing downtime to your currently running application.

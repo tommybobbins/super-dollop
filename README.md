@@ -68,6 +68,10 @@ AWS Solutions Architect Professional Revision notes
 - [IoT Greengrass](iot_greengrass.md)
 - [Personal Health Dashboards](personal_health_dashboard.md)
 - [Athena](athena.md)
-
+- [EMR](emr.md)
+- [Other Analytics Services](analytics.md)
+- [Analytics Architecture](analytics_architecture.md)
+- [MSK](msk.md)
+- [Cloudsearch](cloudsearch.md)
 ## MNEMONIC
 

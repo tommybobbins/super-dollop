@@ -76,3 +76,9 @@ As of March 31, 2022, AWS has discontinued AWS Server Migration Service (AWS SMS
 VPC Flow logs show L4 detail,  but if you need to see the content of packets (wireshark):
 
 Generally, the promiscuous mode allows the user to bypass the normal operation mode by forwarding all traffic it receives to the CPU. However for AWS, even if you can turn your NIC to Promiscuous mode, the hypervisor will never pass traffic intended for another virtual machine to your EC2 instance. You need to use traffic mirroring as it allows you to copy traffic passing through an elastic network adaptor and send it toward another instance for further investigation.
+
+## Configure Traffic Mirroring
+
+Configure Traffic Mirroring on elastic network interface of the EC2 instances. Send the mirrored traffic to a monitoring appliance for storage and inspection. Traffic Mirroring can copy network traffic from an elastic network interface and send it to a monitoring appliance for inspection.
+
+PAYLOAD == TRAFFIC MIRRORING!
