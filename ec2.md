@@ -82,3 +82,12 @@ Generally, the promiscuous mode allows the user to bypass the normal operation m
 Configure Traffic Mirroring on elastic network interface of the EC2 instances. Send the mirrored traffic to a monitoring appliance for storage and inspection. Traffic Mirroring can copy network traffic from an elastic network interface and send it to a monitoring appliance for inspection.
 
 PAYLOAD == TRAFFIC MIRRORING!
+
+# EC2Rescue
+
+- Diagnose and troubleshoot problems on Amazon EC2 Linux and Windows Server instances. You can run the tool manually, or you can run the tool automatically by using Systems Manager Automation and the AWSSupport-ExecuteEC2Rescue document. 
+- The AWSSupport-ExecuteEC2Rescue document in Systems Manager Automation is designed to perform a combination of Systems Manager actions, AWS CloudFormation actions, and Lambda functions that automate the steps normally required to use EC2Rescue.
+
+# Spot Fleet
+
+A Spot Fleet is a set of Spot Instances and optionally On-Demand Instances that are launched based on criteria that you specify. The Spot Fleet selects the Spot capacity pools that meet your needs and launches Spot Instances to meet the target capacity for the fleet. By default, Spot Fleets are set to maintain target capacity by launching replacement instances after Spot Instances in the fleet are terminated. 

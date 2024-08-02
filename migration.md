@@ -6,6 +6,7 @@
 - Use AWS Application Discovery Service to gather information about the running virtual machines and running applications inside the servers. Has an agentless (deployed through OVA in VMware) and agent-based discovery (deployed on individual servers).
 
 ## AWS Application Discovery Service 
+* DO THE PLAN! * 
 
 Helps you plan your migration to the AWS cloud by collecting usage and configuration data about your on-premises servers. Application Discovery Service is integrated with AWS Migration Hub, which simplifies your migration tracking as it aggregates your migration status information into a single console. You can view the discovered servers, group them into applications, and then track the migration status of each application from the Migration Hub console in your home region.
 
@@ -23,7 +24,7 @@ Agent based discovery (Hyper_V & servers) also provides System configuration, Sy
 Provides a single place to discover your existing servers, plan migrations, and track the status of each application migration. The Migration Hub provides visibility into your application portfolio and streamlines planning and tracking. You can visualize the connections and the status of the servers and databases that make up each of the applications you are migrating, regardless of which migration tool you are using. Migration Hub gives you the choice to start migrating right away and group servers while migration is underway or to first discover servers and then group them into applications.
 
 ## Application Migration Service (MGN)
-
+* DO THE WORK! *
 Highly automated lift-and-shift (rehost) solution for migrating applications to AWS.
 
 - Agentless snapshot based replication with AWS MGN vCenter Client
@@ -32,6 +33,9 @@ Highly automated lift-and-shift (rehost) solution for migrating applications to 
 - Server migration service (fore-runner to MGN uses incremental snapshot based replication and enables cutover windows measured in hours).
 - MGN integrates with the Cloud Migration Factory for orchestration.
 - Can migrate virtual and physical services.
+
+```` Application Discovery Service->Migration Hub->Application Migration Service->Replication Agent````
+Adds Mike Hanky and Michael Souter Right Away.
 
 ### Agent based replication
 

@@ -73,5 +73,9 @@ AWS Solutions Architect Professional Revision notes
 - [Analytics Architecture](analytics_architecture.md)
 - [MSK](msk.md)
 - [Cloudsearch](cloudsearch.md)
+- [Workdocs](workdocs.md)
+- [Cloudwatch](cloudwatch.md)
+- [Metrics and Tracing](metrics_and_tracing.md)
+- [Monitoring Architecture Pattersn](monitoring_architecture.md)
 ## MNEMONIC
 

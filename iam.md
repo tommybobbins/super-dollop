@@ -364,7 +364,7 @@ Identity Federation can have these flavours
 - AWS IAM Identity Center has integration with Microsoft AD through the AWS Directory Service. 
 - Employees can sign in to AWS access portal using their corporate Active Directory credentials. 
 - To grant Active Directory users access to accounts and applications, you simply add them to the appropriate Active Directory groups. 
-- Third Party integration support, using Identity Center, sign-ins to 3rd party applications is simple.
+- Third Party integration support, using Identity Center, sign-ins to 3rd party applications is simple. Assign users access to SaaS applications.
 - For example, you can grant the DevOps group SSO access to your production AWS accounts. Users added to the DevOps group are then granted SSO access to these AWS accounts automatically. This automation makes it easy to onboard new users and gives existing users access to new accounts and applications quickly.
 - Can configure one and two-way external and forest trust relationships between your AWS Directory Service for Microsoft Active Directory and on-premises directories, as well as between multiple AWS Managed Microsoft AD directories in the AWS cloud. 
 - AWS Managed Microsoft AD supports all three trust relationship directions: Incoming, Outgoing, and Two-way (Bi-directional). AWS Managed Microsoft AD supports both external and forest trusts.
