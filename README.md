@@ -77,5 +77,12 @@ AWS Solutions Architect Professional Revision notes
 - [Cloudwatch](cloudwatch.md)
 - [Metrics and Tracing](metrics_and_tracing.md)
 - [Monitoring Architecture Pattersn](monitoring_architecture.md)
+- [ACM](acm.md)
+- [HSM](hsm.md)
+- [KMS](kms.md)
+- [Macie](macie.md)
+- [AWS Config](config.md)
+- [Inspector](inspector.md)
+- [Shield](shield.md)
 ## MNEMONIC
 
