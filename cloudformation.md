@@ -34,6 +34,7 @@ AWS Service Catalog, create and manage approved catalogs of IT services. It enab
 - Product is added to a portfolio.
 - Users/Groups are assigned permissions to a portfolio.
 - Constraints are added to the product/portfolio.
+- AWSServiceCatalogEndUserReadOnlyAccess to only allow users to provision from a Service Catalogue
 
 ### Constraints
 

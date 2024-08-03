@@ -65,7 +65,7 @@ AWS Solutions Architect Professional Revision notes
 - [Resource Access Manager](ram.md)
 - [Personal Health Dashboard](personal_health_dashboard.md)
 - [Well Architected Tool](wat.md)
-- [IoT Greengrass](iot_greengrass.md)
+- [IoT](iot.md)
 - [Personal Health Dashboards](personal_health_dashboard.md)
 - [Athena](athena.md)
 - [EMR](emr.md)
@@ -87,5 +87,12 @@ AWS Solutions Architect Professional Revision notes
 - [Network and DNS Firewall](firewall.md)
 - [Audit Manager](audit.md)
 - [Security Architecture  Patterns](security_architecture.md)
+- [Amplify](amplify.md)
+- [Device Farm](device_farm.md)
+- [Machine Learning](ml.md)
+- [Transcoder](transcoder.md)
+- [Licence Manager](licencemanager.md)
+- [Compute Optimizer](compute_optimzer.md)
+- [Cost Management](cost_management.md)
 ## MNEMONIC
 

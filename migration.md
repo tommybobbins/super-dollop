@@ -87,3 +87,7 @@ MySQL -> DMS -> Aurora (include Aurora, Redshift, DDB and DocumentDB).
 - Migrate servers to serverless functions or containers
 - Migrate RDBMS to Managed DBS or NoSQL DBs
 - Filestores to Object stores etc.
+
+## Migration Evaluator
+
+Collect data from on-premise servers via SNMP. Windows Amazon EC2 instance.
