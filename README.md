@@ -76,7 +76,7 @@ AWS Solutions Architect Professional Revision notes
 - [Workdocs](workdocs.md)
 - [Cloudwatch](cloudwatch.md)
 - [Metrics and Tracing](metrics_and_tracing.md)
-- [Monitoring Architecture Pattersn](monitoring_architecture.md)
+- [Monitoring Architecture Patterns](monitoring_architecture.md)
 - [ACM](acm.md)
 - [HSM](hsm.md)
 - [KMS](kms.md)
@@ -84,5 +84,8 @@ AWS Solutions Architect Professional Revision notes
 - [AWS Config](config.md)
 - [Inspector](inspector.md)
 - [Shield](shield.md)
+- [Network and DNS Firewall](firewall.md)
+- [Audit Manager](audit.md)
+- [Security Architecture  Patterns](security_architecture.md)
 ## MNEMONIC
 
