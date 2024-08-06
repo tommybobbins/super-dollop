@@ -94,5 +94,6 @@ AWS Solutions Architect Professional Revision notes
 - [Licence Manager](licencemanager.md)
 - [Compute Optimizer](compute_optimzer.md)
 - [Cost Management](cost_management.md)
+- [AWS Backup](aws_backup.md)
 ## MNEMONIC
 
