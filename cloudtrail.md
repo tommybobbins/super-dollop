@@ -34,7 +34,7 @@ Management events provide information about management operations that are perfo
 
 ## CloudTrail Data Events
 
-Data events provide information about the resource operations performed on or in a resource.
+Data events provide information about the resource operations performed on or in a resource. Use advanced event selectors to specify the resource ARN if required.
 
 ## CloudTrail Multi-Account and Region
 

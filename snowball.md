@@ -2,6 +2,7 @@
 
 Migrate large volumes of data to AWS.
 
+- 7 days request->data copy->return to AWS->loaded into an S3 bucket.
 - Secure storage device for physical tranportation
 - Snowball client is software that is installed on a local computer to identity, compress, encrypt and transfer data
 - 256 bit encryption (managed with AWS KMS) and tamper resistant enclosures with TPM.
