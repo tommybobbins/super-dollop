@@ -23,3 +23,9 @@ When using an NLB with a VPC endpoint or AWS GA, source IPs are the private IPs 
 ## Session State and Stickiness
 
 - Network load balancers do not support least outstanding requests routing.
+
+## Dynamic Scaling 
+
+- Target tracking scaling—Increase and decrease the current capacity of the group based on a Amazon CloudWatch metric and a target value. It works similar to the way that your thermostat maintains the temperature of your home—you select a temperature and the thermostat does the rest.
+- Step scaling—Increase and decrease the current capacity of the group based on a set of scaling adjustments, known as step adjustments, that vary based on the size of the alarm breach.
+- Simple scaling—Increase and decrease the current capacity of the group based on a single scaling adjustment, with a cooldown period between each scaling activity

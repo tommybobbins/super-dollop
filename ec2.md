@@ -91,3 +91,13 @@ PAYLOAD == TRAFFIC MIRRORING!
 # Spot Fleet
 
 A Spot Fleet is a set of Spot Instances and optionally On-Demand Instances that are launched based on criteria that you specify. The Spot Fleet selects the Spot capacity pools that meet your needs and launches Spot Instances to meet the target capacity for the fleet. By default, Spot Fleets are set to maintain target capacity by launching replacement instances after Spot Instances in the fleet are terminated. 
+
+# HPC and EC2
+
+Run the HPC within a single AZ, cluster PG, EFA and *disable hyperthreading*. Most HPC applications will benefit from disabling Hyperthreading:
+
+```` 
+AWS enables Intel Hyper-Threading Technology, commonly referred to as “hyperthreading,” by default. Hyperthreading improves performance for some applications by allowing one process per hyperthread (two processes per core). Most HPC applications benefit from disabling hyperthreading, and therefore, it tends to be the preferred environment for HPC applications. Hyperthreading is easily disabled in Amazon EC2. Unless an application has been tested with hyperthreading enabled, it is recommended that hyperthreading be disabled and that processes are launched and individually pinned to cores when running HPC applications. CPU or processor affinity allows process pinning to easily happen.
+````
+
+https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/compute.html
