@@ -95,5 +95,6 @@ AWS Solutions Architect Professional Revision notes
 - [Compute Optimizer](compute_optimzer.md)
 - [Cost Management](cost_management.md)
 - [AWS Backup](aws_backup.md)
+- [MemoryDB](memorydb.md)
 ## MNEMONIC
 

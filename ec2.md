@@ -101,3 +101,7 @@ AWS enables Intel Hyper-Threading Technology, commonly referred to as “hyperth
 ````
 
 https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/compute.html
+
+# Amazon Linux boot time
+
+Boot time a problem? Don't want to use a minimum sized ASG because of this? You can always use Hibernation provide you enable it before you launch.
