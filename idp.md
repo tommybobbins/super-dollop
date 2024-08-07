@@ -43,3 +43,20 @@ Users --> App --> Cognito User Pool --> Cognito IdP --> AWS STS (sts:AssumeRoleW
           Social IDp <----->                     
            --------------------------------------------------------------> DDB
 ````
+
+## Migrate users from Active Directory to AWS Managed Microsoft AD
+
+You can use the Active Directory Migration Toolkit (ADMT) along with the Password Export Service (PES) to migrate users from your self-managed Active Directory to your AWS Managed Microsoft AD directory. This enables you to migrate Active Directory objects and encrypted passwords for your users more easily.
+
+https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_migrate_users.html
+
+## Simple AD
+Simple AD is a standalone managed directory that is powered by a Samba 4 Active Directory Compatible Server. It is available in two sizes.
+
+- Small - Supports up to 500 users (approximately 2,000 objects including users, groups, and computers).
+
+- Large - Supports up to 5,000 users (approximately 20,000 objects including users, groups, and computers).
+
+Simple AD provides a subset of the features offered by AWS Managed Microsoft AD, including the ability to manage user accounts and group memberships, create and apply group policies, securely connect to Amazon EC2 instances, and provide Kerberos-based single sign-on (SSO). However, note that Simple AD does not support features such as multi-factor authentication (MFA), trust relationships with other domains, Active Directory Administrative Center, PowerShell support, Active Directory recycle bin, group managed service accounts, and schema extensions for POSIX and Microsoft applications.
+
+https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_simple_ad.html
