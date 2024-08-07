@@ -15,3 +15,11 @@ AWS Backup is a fully-managed service that makes it easy to centralize and autom
 
 ## Backup Vaults
 In AWS Backup, a backup vault is a container that stores and organizes your backups. Associated with a KMS key.
+
+## Backup Policies can be created at the Organization Level.
+
+https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_backup_create.html
+
+- After you enable backup policies for your organization, you can create a policy.
+- When your backup requirements change, you can update an existing policy.
+- When you no longer need a policy and after you detach it from all organizational units (OUs) and accounts, you can delete it.
