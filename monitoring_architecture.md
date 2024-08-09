@@ -1,4 +1,6 @@
-# | Requirement | Solution |
+# Monitoring Architecture
+
+| Requirement | Solution |
 | --- | --- |
 | Need to stream logs from EC2 instances in an Autoscaling group | Cloudwatch Agent |
 |Need to collect metrics from EC2 instances with 1 second granularity| Custom metric- High resolution metrics in Cloudwatch Agent|
