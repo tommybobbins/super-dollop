@@ -23,3 +23,9 @@ https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_
 - After you enable backup policies for your organization, you can create a policy.
 - When your backup requirements change, you can update an existing policy.
 - When you no longer need a policy and after you detach it from all organizational units (OUs) and accounts, you can delete it.
+
+## Data Lifecycle Manager
+
+https://aws.amazon.com/ebs/data-lifecycle-manager/
+
+Amazon Data Lifecycle Manager provides an automated, policy-based lifecycle management solution for Amazon Elastic Block Store (EBS) Snapshots and EBS-backed Amazon Machine Images (AMIs). Automate the creation of point-in-time copy of your block storage data with user-defined policies that you can customize based on data protection needs. Amazon Data Lifecycle Manager requires no scripting or special training.
