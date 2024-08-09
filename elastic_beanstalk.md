@@ -16,7 +16,7 @@ Fully managed environment for web applications.  Upload source code in zip file.
 
 ## Versions
 
-- Applicat->Version1, Version2, Version3 etc.
+- Application->Version1, Version2, Version3 etc.
 - Each version is a specific reference to a section of deployable code
 - Application version will typically point to an S3 bucket containing the code. Versions reside within bucket.
 - Versions reside with Environment (Dev can run Version 3, Production can run Version 2).
