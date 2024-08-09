@@ -4,6 +4,7 @@
 
 - Swagger
 - Open API 3.0
+- 10MB max payload
 
 ## Outputs
 
@@ -28,7 +29,12 @@
 
 ## Caching
 
-- Can add caching to API calls by provisioning an API Gateway cache and specifying it's size in GB, Encryption and TTL.
+- Can add caching to API calls by provisioning an API Gateway cache and specifying it's size in GB (0.5GB to 237GB), Encryption and TTL (default 300s).
+- Cache is defined per stage
+- Override cache per method
+- Can override with ```` Cache-Control: max-age=0 ```` HTTP header.
+- Can be encrypted.
+- Possible to flush the cache immediately
 - Caching allows you to cache the endpoints responses.
 - Reduces the calls to the backend, improve latency.
 
@@ -45,3 +51,4 @@
 - Different Public Endpoints with API key for premium customers.
 - Higher rates for throttling and burst for premium customers.
 - Per method throttling limits.
+

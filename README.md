@@ -96,5 +96,6 @@ AWS Solutions Architect Professional Revision notes
 - [Cost Management](cost_management.md)
 - [AWS Backup](aws_backup.md)
 - [MemoryDB](memorydb.md)
+- [DocumentDB](documentdb.md)
 ## MNEMONIC
 
