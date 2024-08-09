@@ -164,7 +164,8 @@ An EC2 application uses the Instance Profile to assume the Role, temporary crede
 
 # IAM Policy Variables and Tags
 
-Example: ````${aws:username}````
+````
+Example: ${aws:username}
     "Resource": ["arn:aws:s3:::mybucket/${aws:username}/*"]
 AWS Specific:
     aws:CurrentTime, aws:TokenIssueTime, aws:principaltype, aws:SecureTransport,
@@ -173,6 +174,8 @@ Service Specific:
     s3:prefix, s3:max-keys, s3:x-amz-acl, sns:Endpoint, sns:Protocol
 Tag Based:
     iam:ResourceTag/key-name, aws:PrincipalTag/key-name
+
+````
 
 # IAM Roles and Resource Based Policies
 
