@@ -40,9 +40,9 @@ AWS Service Catalog, create and manage approved catalogs of IT services. It enab
 
 - Controls the ways that AWS resources can be deployed.
 - Apply limits to products for governance or cost control.
-- * Launch constraints * - specify a role for a product in a portfolio. The role is used to provision resources at launch so you can restrict user permissions without impacting users ability to provision products from the catalog.
-- * Notification constraints * - enable you to get notifications about stack events using an Amazon SNS topic.
-- * Template constraints * - restrict the configuration parameters that are available for the user when launching the product.
+- *Launch constraints* - specify a role for a product in a portfolio. The role is used to provision resources at launch so you can restrict user permissions without impacting users ability to provision products from the catalog.
+- *Notification constraints* - enable you to get notifications about stack events using an Amazon SNS topic.
+- *Template constraints* - restrict the configuration parameters that are available for the user when launching the product.
 
 ### Service Catalog Permissions
 
